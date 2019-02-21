@@ -9,12 +9,10 @@ module.exports = {
 		basePath: process.env.NODE_ENV === 'production' ? '/public' : '',
 		projects
 	},
-
 	build: {
 		sass: {
 			src: `${projectLocation}/assets/scss`,
-			files: `${projectLocation}/assets/scss/main.scss`,
-			destination: `${projectLocation}/public`
+			destination: `${projectLocation}/public/dist/css`
 		},
 		pug: {
 			src: `${projectLocation}/assets/pages`,
