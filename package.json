@@ -6,6 +6,10 @@
 	"bin": {
 		"dypsy": "bin/dypsy.js"
 	},
+	"engines": {
+		"node": ">=8"
+	},
+	"preferGlobal": true,
 	"scripts": {
 		"build": "node lib/index.js",
 		"dev:webpack": "webpack --mode development --env.NODE_ENV=dev",
